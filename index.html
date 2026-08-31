@@ -1065,6 +1065,246 @@
         </p>
 
       </div>
+            <!-- ===================================================
+           PROJECT INFORMATION
+      ==================================================== -->
+
+      <div class="form-section">
+
+        <div class="form-section-title">
+          <span>03</span>
+          Project Information
+        </div>
+
+        <div class="form-grid">
+
+          <div class="form-group form-full">
+
+            <label for="projectTitle">
+              Project / Research Title
+            </label>
+
+            <input
+              type="text"
+              id="projectTitle"
+              name="project_title"
+              placeholder="Enter your project or research title"
+            >
+
+          </div>
 
 
-      <!-- ============
+          <div class="form-group">
+
+            <label for="deadline">
+              Required Deadline
+            </label>
+
+            <input
+              type="date"
+              id="deadline"
+              name="deadline"
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="preferredContact">
+              Preferred Contact Method
+            </label>
+
+            <select
+              id="preferredContact"
+              name="preferred_contact"
+            >
+
+              <option value="">
+                Select one
+              </option>
+
+              <option value="WhatsApp">
+                WhatsApp
+              </option>
+
+              <option value="Email">
+                Email
+              </option>
+
+              <option value="Either">
+                Either
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-group form-full">
+
+            <label for="requirements">
+              Detailed Requirements <span>*</span>
+            </label>
+
+            <textarea
+              id="requirements"
+              name="requirements"
+              rows="6"
+              placeholder="Please describe your requirements, topic, instructions, scope of work and any important information..."
+              required
+            ></textarea>
+
+          </div>
+
+
+          <div class="form-group form-full">
+
+            <label for="additionalInfo">
+              Additional Information
+            </label>
+
+            <textarea
+              id="additionalInfo"
+              name="additional_information"
+              rows="4"
+              placeholder="Any additional instructions or information..."
+            ></textarea>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================
+           PRIVACY NOTICE
+      ==================================================== -->
+
+      <div class="form-notice">
+
+        <span>🔒</span>
+
+        <p>
+          Your information will be used only to review your
+          request and contact you regarding the services you
+          have requested.
+        </p>
+
+      </div>
+
+
+      <!-- ===================================================
+           SUBMIT
+      ==================================================== -->
+
+      <button
+        type="submit"
+        class="service-submit-btn"
+        id="serviceSubmitBtn"
+      >
+        <span class="submit-text">
+          Submit Service Request
+        </span>
+
+        <span class="submit-loading">
+          Submitting...
+        </span>
+
+      </button>
+
+
+      <p class="required-note">
+        * Required fields
+      </p>
+
+    </form>
+
+
+    <!-- ===================================================
+         SUCCESS MESSAGE
+    ==================================================== -->
+
+    <div
+      class="service-success"
+      id="serviceSuccess"
+    >
+
+      <div class="success-icon">
+        ✓
+      </div>
+
+
+      <h2>
+        Your Response Has Been Submitted
+      </h2>
+
+
+      <p>
+        Thank you for contacting
+        <strong>Educational Expert</strong>.
+      </p>
+
+
+      <p>
+        Your response has been submitted successfully.
+        Our team will review your requirements and contact
+        you soon through your provided email or WhatsApp number.
+      </p>
+
+
+      <p class="success-thanks">
+        Thank you for trusting Educational Expert.
+      </p>
+
+
+      <button
+        type="button"
+        class="btn primary"
+        id="successCloseBtn"
+      >
+        Close
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+  <div class="container footer">
+
+    <div>
+
+      <strong>
+        Educational Expert
+      </strong>
+
+      <p>
+        Academic • Research • Technology
+      </p>
+
+    </div>
+
+
+    <p>
+      © 2026 Educational Expert. All rights reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
