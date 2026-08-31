@@ -702,3 +702,102 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+/* =====================================================
+   CLIENT FILE UPLOAD DISPLAY
+===================================================== */
+
+const clientFiles =
+  document.getElementById("clientFiles");
+
+const selectedFiles =
+  document.getElementById("selectedFiles");
+
+
+if (clientFiles && selectedFiles) {
+
+  clientFiles.addEventListener(
+    "change",
+    function () {
+
+      selectedFiles.innerHTML = "";
+
+
+      if (clientFiles.files.length === 0) {
+
+        return;
+
+      }
+
+
+      const title =
+        document.createElement("div");
+
+      title.className =
+        "selected-files-title";
+
+      title.textContent =
+        clientFiles.files.length +
+        " file(s) selected";
+
+      selectedFiles.appendChild(title);
+
+
+      Array.from(clientFiles.files).forEach(
+        function (file) {
+
+          const fileItem =
+            document.createElement("div");
+
+          fileItem.className =
+            "selected-file-item";
+
+          fileItem.textContent =
+            "📄 " +
+            file.name +
+            " (" +
+            formatFileSize(file.size) +
+            ")";
+
+          selectedFiles.appendChild(
+            fileItem
+          );
+
+        }
+      );
+
+    }
+  );
+
+}
+
+
+/* =====================================================
+   FILE SIZE FORMATTER
+===================================================== */
+
+function formatFileSize(bytes) {
+
+  if (bytes < 1024) {
+
+    return bytes + " B";
+
+  }
+
+
+  if (bytes < 1024 * 1024) {
+
+    return (
+      (bytes / 1024).toFixed(1) +
+      " KB"
+    );
+
+  }
+
+
+  return (
+    (bytes / (1024 * 1024)).toFixed(1) +
+    " MB"
+  );
+
+}
