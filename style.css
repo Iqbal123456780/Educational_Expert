@@ -1668,3 +1668,85 @@ footer {
 
   .lead {
     font-s
+
+
+
+
+
+
+
+
+     /* =====================================================
+   CLIENT FILE UPLOAD
+===================================================== */
+
+.file-upload-box {
+  position: relative;
+  border: 2px dashed #d5d9e2;
+  border-radius: 14px;
+  padding: 28px 20px;
+  text-align: center;
+  background: #f8fafc;
+  transition: 0.25s ease;
+}
+
+.file-upload-box:hover {
+  border-color: #2563eb;
+  background: #f5f8ff;
+}
+
+.file-upload-box input[type="file"] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  pointer-events: none;
+}
+
+.file-upload-icon {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.file-upload-content strong {
+  font-size: 16px;
+}
+
+.file-upload-content small {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.file-upload-note {
+  margin-top: 9px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.selected-files {
+  margin-top: 12px;
+}
+
+.selected-files-title {
+  font-weight: 700;
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+
+.selected-file-item {
+  padding: 8px 10px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  font-size: 13px;
+  word-break: break-word;
+}
